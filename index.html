@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đất Nền Hòa Lạc - Đầu Tư An Toàn, Lợi Nhuận Cao</title>
+<meta name="description" content="Tư vấn đầu tư Đất nền Hòa Lạc - An toàn, lợi nhuận cao 30%/năm, giá 20-30tr/m2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --green-dark:#09353f;
+  --green-mid:#134f49;
+  --green-light:#398266;
+  --gold:#f5c842;
+  --gold-light:#fdf5c1;
+  --white:#ffffff;
+  --text-dark:#0a3643;
+  --text-gray:#555;
+  --bg-light:#f8fafc;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',sans-serif;color:var(--text-dark);overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(9,53,63,0.97);backdrop-filter:blur(10px);padding:0 20px;height:64px;display:flex;align-items:center}
+.nav-inner{max-width:1200px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{color:var(--gold);font-size:18px;font-weight:800;text-decoration:none;white-space:nowrap}
+.nav-links{display:flex;gap:24px;list-style:none;align-items:center}
+.nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:13px;font-weight:500;transition:color 0.2s;white-space:nowrap}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--green-dark)!important;padding:8px 16px;border-radius:25px;font-weight:700!important;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.nav-cta:hover{background:var(--gold-light)!important;color:var(--green-dark)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;transition:all 0.3s}
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;background:var(--green-dark);padding:20px;z-index:999;border-top:1px solid rgba(255,255,255,0.1)}
+.mobile-menu.open{display:block}
+.mobile-menu ul{list-style:none;display:flex;flex-direction:column;gap:0}
+.mobile-menu a{display:block;color:var(--white);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:14px;font-weight:500}
+.mobile-menu .nav-cta{display:inline-flex;margin-top:12px;border:none}
+
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(135deg,var(--green-dark) 0%,var(--green-mid) 60%);position:relative;display:flex;align-items:center;overflow:hidden;padding-top:64px}
+.hero-bg{position:absolute;inset:0;background-image:url('../w.ladicdn.com/s2250x1050/5b5bed5d9256d53eeefccae2/HZWU4kOG20201027102027.jpg');background-size:cover;background-position:center;opacity:0.18}
+.hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:60px 20px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,200,66,0.15);border:1px solid rgba(245,200,66,0.4);color:var(--gold);padding:8px 16px;border-radius:25px;font-size:13px;font-weight:600;margin-bottom:20px}
+.hero-badge::before{content:'🏆';font-size:16px}
+.hero-title{font-size:clamp(32px,5vw,58px);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:16px}
+.hero-title span{color:var(--gold)}
+.hero-subtitle{font-size:clamp(15px,2vw,18px);color:rgba(255,255,255,0.8);margin-bottom:32px;line-height:1.7}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px}
+.stat-box{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:16px;padding:20px;text-align:center;backdrop-filter:blur(10px)}
+.stat-num{font-size:clamp(24px,4vw,40px);font-weight:900;color:var(--gold);display:block}
+.stat-label{font-size:13px;color:rgba(255,255,255,0.7);margin-top:4px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:var(--gold);color:var(--green-dark);padding:14px 28px;border-radius:50px;font-weight:800;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,200,66,0.4)}
+.btn-outline{background:transparent;color:var(--white);padding:14px 28px;border-radius:50px;font-weight:600;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;border:2px solid rgba(255,255,255,0.4);transition:all 0.2s}
+.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,0.1)}
+.hero-form-box{background:rgba(255,255,255,0.97);border-radius:24px;padding:36px;box-shadow:0 30px 80px rgba(0,0,0,0.3)}
+.form-title{font-size:20px;font-weight:800;color:var(--green-dark);margin-bottom:6px}
+.form-sub{font-size:13px;color:var(--text-gray);margin-bottom:24px}
+.form-group{margin-bottom:14px}
+.form-group input{width:100%;padding:14px 16px;border:2px solid #e8ecef;border-radius:12px;font-size:14px;font-family:inherit;color:var(--text-dark);transition:border-color 0.2s;outline:none}
+.form-group input:focus{border-color:var(--green-light)}
+.form-group input::placeholder{color:#aaa}
+.form-submit{width:100%;background:linear-gradient(135deg,var(--green-light),var(--green-dark));color:var(--white);padding:16px;border-radius:12px;font-size:16px;font-weight:800;border:none;cursor:pointer;transition:all 0.2s;letter-spacing:0.5px}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(57,130,102,0.4)}
+.form-note{text-align:center;font-size:12px;color:#999;margin-top:10px}
+
+/* SECTION TITLES */
+.section-header{text-align:center;margin-bottom:50px}
+.section-tag{display:inline-block;background:var(--gold-light);color:var(--green-dark);padding:6px 16px;border-radius:25px;font-size:13px;font-weight:700;margin-bottom:12px}
+.section-title{font-size:clamp(24px,4vw,40px);font-weight:900;color:var(--green-dark);margin-bottom:12px}
+.section-title span{background:linear-gradient(135deg,var(--green-light),var(--green-dark));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.section-desc{font-size:16px;color:var(--text-gray);max-width:600px;margin:0 auto;line-height:1.7}
+
+/* HOT LISTINGS */
+.section-hot{padding:80px 0;background:var(--bg-light)}
+.listings-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+.listing-card{background:var(--white);border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);transition:all 0.3s}
+.listing-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(0,0,0,0.15)}
+.listing-img{width:100%;height:200px;object-fit:cover;display:block;background:var(--green-dark)}
+.listing-img-wrap{position:relative;height:200px;overflow:hidden;background:linear-gradient(135deg,var(--green-dark),var(--green-mid))}
+.listing-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s}
+.listing-card:hover .listing-img-wrap img{transform:scale(1.05)}
+.listing-badge{position:absolute;top:12px;left:12px;background:var(--gold);color:var(--green-dark);padding:4px 12px;border-radius:25px;font-size:11px;font-weight:800}
+.listing-body{padding:20px}
+.listing-name{font-size:15px;font-weight:700;color:var(--green-dark);margin-bottom:8px;line-height:1.4}
+.listing-price{font-size:18px;font-weight:900;color:var(--green-light);margin-bottom:12px}
+.listing-btn{width:100%;background:linear-gradient(135deg,var(--green-light),var(--green-dark));color:var(--white);border:none;padding:12px;border-radius:10px;font-size:13px;font-weight:700;cursor:pointer;letter-spacing:0.5px;transition:opacity 0.2s}
+.listing-btn:hover{opacity:0.9}
+
+/* MAT BANG */
+.section-matbang{padding:80px 0;background:var(--white)}
+.mb-scroll-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:0 20px}
+.mb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;min-width:700px}
+.mb-card{background:linear-gradient(135deg,var(--green-dark),var(--green-mid));border-radius:16px;overflow:hidden;transition:transform 0.2s}
+.mb-card:hover{transform:scale(1.02)}
+.mb-card-img{width:100%;height:160px;object-fit:cover;opacity:0.85}
+.mb-card-body{padding:16px}
+.mb-name{font-size:14px;font-weight:700;color:var(--white);margin-bottom:8px;line-height:1.4}
+.mb-details{font-size:12px;color:rgba(255,255,255,0.75);line-height:1.6;margin-bottom:12px}
+.mb-btn{display:block;background:var(--gold);color:var(--green-dark);text-align:center;padding:8px;border-radius:8px;font-size:12px;font-weight:800;text-decoration:none;cursor:pointer;border:none;width:100%}
+.mb-btn:hover{background:var(--gold-light)}
+
+/* TONG QUAN */
+.section-tq{padding:80px 0;background:linear-gradient(155deg,var(--green-dark) 0%,#0a2e38 60%,#0d3b30 100%);position:relative;overflow:hidden}
+.section-tq::before{content:'';position:absolute;inset:0;background-image:url('../w.ladicdn.com/s2250x1050/5b5bed5d9256d53eeefccae2/HZWU4kOG20201027102027.jpg');background-size:cover;background-position:center;opacity:0.06}
+.tq-title{font-size:clamp(24px,4vw,40px);font-weight:900;color:var(--white);margin-bottom:20px;line-height:1.2}
+.tq-title span{color:var(--gold)}
+.tq-desc{color:rgba(255,255,255,0.8);line-height:1.9;font-size:15px;margin-bottom:16px}
+
+/* TQ TABS */
+.tq-tabs-wrap{position:relative;z-index:1}
+.tq-tab-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.tq-tab-btn{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:25px;color:rgba(255,255,255,0.7);padding:9px 20px;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;font-family:inherit}
+.tq-tab-btn.active{background:var(--gold);border-color:var(--gold);color:var(--green-dark)}
+.tq-tab-btn:hover:not(.active){background:rgba(255,255,255,0.15);color:var(--white)}
+.tq-tab-pane{display:none}
+.tq-tab-pane.active{display:block;animation:fadeInUp 0.4s ease}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* TQ INTRO */
+.tq-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:0}
+.tq-stats-row{display:flex;gap:16px;margin-top:28px;flex-wrap:wrap}
+.tq-stat{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:14px;padding:18px 22px;text-align:center;min-width:110px;backdrop-filter:blur(8px)}
+.tq-stat-num{font-size:26px;font-weight:900;color:var(--gold);display:block}
+.tq-stat-label{font-size:11px;color:rgba(255,255,255,0.65);margin-top:3px}
+.tq-img-box{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+.tq-img-box img{width:100%;height:340px;object-fit:cover;display:block}
+
+/* LOCATION POINTS */
+.loc-points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.loc-point{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:16px 18px;display:flex;gap:12px;align-items:flex-start;transition:all 0.25s}
+.loc-point:hover{background:rgba(255,255,255,0.13);border-color:rgba(245,200,66,0.4)}
+.loc-point-icon{font-size:24px;min-width:30px}
+.loc-point-name{font-size:13px;font-weight:700;color:var(--gold);margin-bottom:3px}
+.loc-point-desc{font-size:12px;color:rgba(255,255,255,0.65);line-height:1.5}
+
+/* 4 ZONES */
+.zones-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.zone-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:24px;transition:all 0.3s}
+.zone-card:hover{background:rgba(255,255,255,0.11);border-color:var(--gold);transform:translateY(-4px)}
+.zone-icon{font-size:36px;margin-bottom:12px;display:block}
+.zone-name{font-size:15px;font-weight:800;color:var(--gold);margin-bottom:8px}
+.zone-items{list-style:none;padding:0}
+.zone-items li{font-size:13px;color:rgba(255,255,255,0.72);padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;align-items:flex-start;gap:6px;line-height:1.5}
+.zone-items li:last-child{border-bottom:none}
+.zone-items li::before{content:'›';color:var(--gold);font-weight:700;flex-shrink:0}
+
+/* INVESTORS */
+.investor-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.investor-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:24px;transition:all 0.3s}
+.investor-card:hover{background:rgba(255,255,255,0.11);border-color:rgba(245,200,66,0.5);transform:translateY(-4px)}
+.investor-logo{font-size:32px;margin-bottom:10px}
+.investor-name{font-size:16px;font-weight:800;color:var(--gold);margin-bottom:10px}
+.investor-desc{font-size:13px;color:rgba(255,255,255,0.72);line-height:1.75}
+
+/* INFRA */
+.infra-content{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.infra-img{border-radius:16px;overflow:hidden;box-shadow:0 16px 50px rgba(0,0,0,0.4)}
+.infra-img img{width:100%;height:300px;object-fit:cover;display:block}
+.infra-list{list-style:none;padding:0}
+.infra-item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+.infra-item:last-child{border-bottom:none}
+.infra-item-icon{width:40px;height:40px;min-width:40px;background:rgba(245,200,66,0.15);border:1px solid rgba(245,200,66,0.3);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.infra-item-title{font-size:14px;font-weight:700;color:var(--white);margin-bottom:3px}
+.infra-item-desc{font-size:12px;color:rgba(255,255,255,0.6);line-height:1.5}
+
+@media(max-width:900px){.tq-intro-grid,.infra-content,.loc-points,.zones-grid,.investor-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.tq-tab-nav{gap:6px}.tq-tab-btn{font-size:12px;padding:7px 14px}}
+
+/* LOI ICH */
+.section-loiich{padding:80px 0;background:var(--bg-light)}
+.benefits-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.benefit-card{background:var(--white);border-radius:20px;padding:32px;display:flex;gap:20px;align-items:flex-start;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:all 0.3s;border:2px solid transparent}
+.benefit-card:hover{border-color:var(--green-light);transform:translateY(-4px);box-shadow:0 12px 40px rgba(57,130,102,0.15)}
+.benefit-icon{width:56px;height:56px;min-width:56px;background:linear-gradient(135deg,var(--green-light),var(--green-dark));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px}
+.benefit-content{}
+.benefit-title{font-size:17px;font-weight:800;color:var(--green-dark);margin-bottom:8px}
+.benefit-desc{font-size:14px;color:var(--text-gray);line-height:1.7}
+
+/* VI TRI */
+.section-vitri{padding:80px 0;background:var(--white)}
+.vitri-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.vitri-img{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.12)}
+.vitri-img img{width:100%;height:420px;object-fit:cover;display:block}
+.vitri-logo-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.vitri-item{background:var(--bg-light);border-radius:12px;padding:14px;text-align:center;border:1px solid #e8ecef}
+.vitri-item-label{font-size:12px;font-weight:600;color:var(--text-gray);margin-top:6px}
+
+/* PHUONG AN */
+.section-phuongan{padding:80px 0;background:linear-gradient(135deg,var(--green-dark),var(--green-mid))}
+.pa-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.pa-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:32px;backdrop-filter:blur(10px);transition:all 0.3s}
+.pa-card:hover{background:rgba(255,255,255,0.12);border-color:var(--gold)}
+.pa-icon{font-size:40px;margin-bottom:16px;display:block}
+.pa-name{font-size:18px;font-weight:800;color:var(--gold);margin-bottom:12px}
+.pa-desc{font-size:14px;color:rgba(255,255,255,0.8);line-height:1.8;margin-bottom:20px}
+.pa-btn{display:inline-block;background:var(--gold);color:var(--green-dark);padding:10px 24px;border-radius:25px;font-size:13px;font-weight:800;text-decoration:none;cursor:pointer;border:none;transition:all 0.2s}
+.pa-btn:hover{background:var(--gold-light);transform:scale(1.03)}
+
+/* TIN TUC */
+.section-tintuc{padding:80px 0;background:var(--bg-light)}
+.news-layout{display:grid;grid-template-columns:2fr 1fr;gap:32px;align-items:start}
+.news-main{}
+.news-main-card{background:var(--white);border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);margin-bottom:24px;transition:all 0.3s}
+.news-main-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.13)}
+.news-main-img{width:100%;height:220px;object-fit:cover;display:block;background:var(--green-dark)}
+.news-main-body{padding:24px}
+.news-tag{display:inline-block;background:var(--gold-light);color:var(--green-dark);padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:10px}
+.news-main-title{font-size:18px;font-weight:800;color:var(--green-dark);line-height:1.4;margin-bottom:8px}
+.news-main-desc{font-size:14px;color:var(--text-gray);line-height:1.7;margin-bottom:14px}
+.news-read-more{font-size:13px;font-weight:700;color:var(--green-light);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.news-read-more:hover{color:var(--green-dark)}
+.news-sidebar{}
+.news-sidebar-title{font-size:15px;font-weight:800;color:var(--green-dark);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--gold)}
+.news-item{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid #eee;text-decoration:none;transition:all 0.2s}
+.news-item:last-child{border-bottom:none}
+.news-item:hover .news-item-title{color:var(--green-light)}
+.news-item-icon{width:42px;height:42px;min-width:42px;background:linear-gradient(135deg,var(--green-light),var(--green-dark));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.news-item-title{font-size:13px;font-weight:600;color:var(--text-dark);line-height:1.5}
+.news-item-src{font-size:11px;color:var(--text-gray);margin-top:3px}
+@media(max-width:900px){.news-layout{grid-template-columns:1fr}}
+
+/* CTA STRIP */
+.cta-strip{padding:60px 20px;background:var(--green-dark);text-align:center}
+.cta-strip h2{font-size:clamp(22px,4vw,38px);font-weight:900;color:var(--white);margin-bottom:8px}
+.cta-strip p{color:rgba(255,255,255,0.7);font-size:16px;margin-bottom:28px}
+.cta-strip .btn-primary{font-size:17px;padding:16px 36px}
+
+/* FOOTER */
+footer{background:#061820;color:rgba(255,255,255,0.6);padding:40px 20px;text-align:center;font-size:13px}
+footer a{color:var(--gold);text-decoration:none}
+
+/* FLOATING */
+.float-call{position:fixed;bottom:24px;left:24px;z-index:999;width:56px;height:56px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 6px 20px rgba(245,200,66,0.5);animation:pulse 2s infinite;text-decoration:none}
+.float-zalo{position:fixed;bottom:92px;left:24px;z-index:999;width:56px;height:56px;background:#0068ff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;box-shadow:0 6px 20px rgba(0,104,255,0.45);text-decoration:none;letter-spacing:0;animation:pulse-zalo 2s infinite}
+@keyframes pulse-zalo{0%,100%{box-shadow:0 6px 20px rgba(0,104,255,0.4)}50%{box-shadow:0 6px 30px rgba(0,104,255,0.7);transform:scale(1.05)}}
+@keyframes pulse{0%,100%{box-shadow:0 6px 20px rgba(245,200,66,0.4)}50%{box-shadow:0 6px 30px rgba(245,200,66,0.8);transform:scale(1.05)}}
+
+/* POPUP */
+.popup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:2000;align-items:center;justify-content:center;padding:20px}
+.popup-overlay.open{display:flex}
+.popup-box{background:var(--white);border-radius:24px;padding:40px;max-width:480px;width:100%;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.3);animation:slideUp 0.3s ease}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.popup-close{position:absolute;top:16px;right:16px;width:32px;height:32px;background:#f0f0f0;border:none;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:background 0.2s}
+.popup-close:hover{background:#e0e0e0}
+.popup-title{font-size:20px;font-weight:900;color:var(--green-dark);margin-bottom:6px}
+.popup-sub{font-size:14px;color:var(--text-gray);margin-bottom:24px}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-form-box{max-width:500px;margin:0 auto}
+  .tq-inner,.vitri-inner{grid-template-columns:1fr}
+  .pa-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  nav{height:56px}
+  .mobile-menu{top:56px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hero{padding-top:56px}
+  .hero-inner{padding:40px 20px}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .benefits-grid{grid-template-columns:1fr}
+  .mb-grid{grid-template-columns:repeat(2,1fr)}
+  .listing-card{min-width:260px}
+  .listings-grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  .section-title{font-size:26px}
+}
+@media(max-width:480px){
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .hero-btns{flex-direction:column}
+  .btn-primary,.btn-outline{justify-content:center}
+  .mb-grid{grid-template-columns:1fr 1fr}
+  .vitri-logo-row{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">🏡 Hòa Lạc Land</a>
+    <ul class="nav-links">
+      <li><a href="#tong-quan">Tổng Quan</a></li>
+      <li><a href="#loi-ich">Lợi Ích</a></li>
+      <li><a href="#mat-bang">Mặt Bằng</a></li>
+      <li><a href="#vi-tri">Vị Trí</a></li>
+      <li><a href="#tin-tuc">Tin Tức</a></li>
+      <li><a href="#" class="nav-cta" onclick="openPopup()">📞 0915.284.679</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#tong-quan" onclick="closeMenu()">Tổng Quan</a></li>
+    <li><a href="#loi-ich" onclick="closeMenu()">Lợi Ích Đầu Tư</a></li>
+    <li><a href="#mat-bang" onclick="closeMenu()">Mặt Bằng</a></li>
+    <li><a href="#vi-tri" onclick="closeMenu()">Vị Trí</a></li>
+  </ul>
+  <a href="tel:0915284679" class="btn-primary nav-cta">📞 Gọi Ngay: 0915.284.679</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">Cơ Hội Vàng Đầu Tư Cuối Năm</div>
+      <h1 class="hero-title">Đầu Tư Đất Nền<br><span>Hòa Lạc</span><br>An Toàn & Sinh Lời</h1>
+      <p class="hero-subtitle">Sở hữu đất nền pháp lý minh bạch, vị trí chiến lược, hạ tầng hoàn thiện. Tăng trưởng đều, thanh khoản cao.</p>
+      <div class="hero-stats">
+        <div class="stat-box">
+          <span class="stat-num">30%</span>
+          <div class="stat-label">Lợi nhuận/năm</div>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">20-30tr</span>
+          <div class="stat-label">Giá/m² hợp lý</div>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">Sổ đỏ</span>
+          <div class="stat-label">Pháp lý rõ ràng</div>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">60m²+</span>
+          <div class="stat-label">Diện tích đa dạng</div>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#" class="btn-primary" onclick="openPopup()">📄 Tải Bảng Giá Ngay</a>
+        <a href="tel:0915284679" class="btn-outline">📞 Tư Vấn Miễn Phí</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-form-box">
+        <div class="form-title">🎯 Nhận Thông Tin Dự Án</div>
+        <div class="form-sub">Điền thông tin để nhận bảng giá & tư vấn miễn phí</div>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-group"><input type="text" name="name" placeholder="Họ và tên *" required></div>
+          <div class="form-group"><input type="tel" name="phone" placeholder="Số điện thoại *" required pattern="[0-9]{9,11}" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'')"></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Email (không bắt buộc)"></div>
+          <button type="submit" class="form-submit">🚀 TẢI XUỐNG BẢNG GIÁ NGAY</button>
+        </form>
+        <p class="form-note">🔒 Thông tin được bảo mật tuyệt đối</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOT LISTINGS -->
+<section class="section-hot" id="mat-bang">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">🔥 SẢN PHẨM ĐẦU TƯ</div>
+      <h2 class="section-title">Siêu Phẩm <span>Đầu Tư</span></h2>
+      <p class="section-desc">Toàn bộ quỹ đất hiện có – pháp lý rõ ràng, giá hợp lý, đầu tư sinh lợi</p>
+    </div>
+    <div class="listings-grid">
+      <div class="listing-card">
+        <div class="listing-img-wrap">
+          <img src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z6984306701892_141ffc2161e9bef136f5196032e60fcc-20250906140106-tx0x7.jpg" alt="89m2 Lô Góc Ngã Tư" loading="lazy">
+          <div class="listing-badge">LÔ GÓC</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-name">89m² Lô Góc Ngã Tư – Vỉa Hè 7m</div>
+          <div class="listing-price">Liên hệ</div>
+          <button class="listing-btn" onclick="openPopup()">📞 Liên Hệ Tư Vấn</button>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img-wrap">
+          <img src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z6984306701892_141ffc2161e9bef136f5196032e60fcc-20250906140106-tx0x7.jpg" alt="142m2 Lô Góc Lần 2 TDC Vai Réo" loading="lazy">
+          <div class="listing-badge">HOT</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-name">142m² Lô Góc Lần 2 TDC Vai Réo</div>
+          <div class="listing-price">~20 Tr/m²</div>
+          <button class="listing-btn" onclick="openPopup()">📞 Liên Hệ Tư Vấn</button>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img-wrap">
+          <img src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z6929060640734_23542e88febac208b472ab5bf1b09f75-20250906140520-tu9-6.jpg" alt="305m2 TDC Vai Rẽo" loading="lazy">
+          <div class="listing-badge">NỔI BẬT</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-name">305m² TDC Vai Réo – Giá 2x Tr/m²</div>
+          <div class="listing-price">~22 Tr/m²</div>
+          <button class="listing-btn" onclick="openPopup()">📞 Liên Hệ Tư Vấn</button>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img-wrap">
+          <img src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z7023833586787_422ec022c759ae0f14d94ecebd799731-20250918033551-v9kq8.jpg" alt="Khu 16 Phú Cát" loading="lazy">
+          <div class="listing-badge">MỚI</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-name">Khu 16 Lô Phú Cát – Giá Nhỉnh 20 Tr/m²</div>
+          <div class="listing-price">~20 Tr/m²</div>
+          <button class="listing-btn" onclick="openPopup()">📞 Liên Hệ Tư Vấn</button>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img-wrap">
+          <img src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z7023833579385_d304eb9f94c247492624e36210afbf46-copy-20250918033935-vkuq8.jpg" alt="350m2 Đất Nghỉ Dưỡng" loading="lazy">
+          <div class="listing-badge">SINH THÁI</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-name">350m² Đất Nghỉ Dưỡng – Giá Nhỉnh 10 Tr/m²</div>
+          <div class="listing-price">~10 Tr/m²</div>
+          <button class="listing-btn" onclick="openPopup()">📞 Liên Hệ Tư Vấn</button>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img-wrap">
+          <img src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z6929074830101_d0499c77af74cfa374fd0283decd469c-20250906140934-ji6th.jpg" alt="Khu 43 Phú Cát" loading="lazy">
+          <div class="listing-badge">GIÁ TỐT</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-name">Khu 43 Lô Phú Cát – 15 Tr/m²</div>
+          <div class="listing-price">15 Tr/m²</div>
+          <button class="listing-btn" onclick="openPopup()">📞 Liên Hệ Tư Vấn</button>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img-wrap">
+          <img src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z7023833495582_dfb6190185475c884ceaba7d70427a85-20250918033934-9zecx.jpg" alt="63m2 thôn 7" loading="lazy">
+          <div class="listing-badge">NHỎ GỌN</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-name">63m² Thôn 7 Tân Xã Ngay DH10</div>
+          <div class="listing-price">~25 Tr/m²</div>
+          <button class="listing-btn" onclick="openPopup()">📞 Liên Hệ Tư Vấn</button>
+        </div>
+      </div>
+      <div class="listing-card">
+        <div class="listing-img-wrap">
+          <img src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z5733538647840_559fdede5c5309e0a3270106cfe1cf36-20240815075058-fiis1.jpg" alt="29 Lô Phú Cát Hàng F0" loading="lazy">
+          <div class="listing-badge">F0</div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-name">29 Lô Phú Cát – Hàng F0 Chính Chủ</div>
+          <div class="listing-price">~20 Tr/m²</div>
+          <button class="listing-btn" onclick="openPopup()">📞 Liên Hệ Tư Vấn</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAT BANG DETAILS -->
+<section style="padding:60px 0;background:#f0f4f2" id="mat-bang-detail">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">📐 MẶT BẰNG</div>
+      <h2 class="section-title">Mặt Bằng <span>Các Lô Đất</span></h2>
+      <p class="section-desc" style="color:#555">Toàn bộ quỹ đất tại các khu vực Hòa Lạc – Thạch Thất – Sơn Tây</p>
+    </div>
+    <div class="mb-scroll-wrap">
+      <div class="mb-grid" style="grid-template-columns:repeat(4,1fr);min-width:900px">
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z4504020086138_79ffb43a812d50dfeea569247005f9bd-20230710083818-l2hb1.jpg" alt="TDC Da Gao" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB TĐC ĐÀ GẠO</div>
+            <div class="mb-details">Diện tích: 60-300m²<br>Giá: 10-15 Tr/m²<br>Xã: Thạch Hòa, Hà Nội</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z6030545767619_89971d264fb044cdeea3a4d2f5e5b4a4-20241114021231-obj3a.jpg" alt="MB 46 Linh Son" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB 46 LÔ LINH SƠN</div>
+            <div class="mb-details">Diện tích: 80-200m²<br>Ngay đường Huyện<br>Xã: Bình Yên, Hà Nội</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z6030545781376_bfcd7a40cb8d700cae14e20d39175bd6-20241114021231-ew6vr.jpg" alt="MB TDC Linh Son" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB TĐC LINH SƠN</div>
+            <div class="mb-details">Sổ đỏ từng lô<br>Pháp lý minh bạch<br>Giá: 15-20 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z7023833576775_a3f76dc7b2966eb7f7baa8a5e9c168fa-20250918033935-gqltg.jpg" alt="MB Trai Lang" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB TRẠI LÀNG</div>
+            <div class="mb-details">Ngay đường tỉnh lộ<br>Giá hợp lý: 12 Tr/m²<br>Xã: Tân Xã, Thạch Thất</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z7023833579385_d304eb9f94c247492624e36210afbf46-copy-20250918033935-vkuq8.jpg" alt="TDC Binh Yen" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">TĐC BÌNH YÊN</div>
+            <div class="mb-details">Khu dân cư hoàn thiện<br>Hạ tầng đầy đủ<br>Giá: 18-22 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z4504027697834_518ba77efe963f5a9b689c38ea625cdb-20230710083841-zymhq.jpg" alt="MB 29 Lo Phu Cat" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB 29 LÔ PHÚ CÁT</div>
+            <div class="mb-details">Vị trí đắc địa<br>Gần đường chính<br>Giá: 20 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z6929074830101_d0499c77af74cfa374fd0283decd469c-20250906140934-ji6th.jpg" alt="MB 21 Dong Trang" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB 21 LÔ ĐỒNG TRẠNG</div>
+            <div class="mb-details">Khu vực tiềm năng<br>Sổ đỏ từng lô<br>Giá: 18-22 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z7023833576775_a3f76dc7b2966eb7f7baa8a5e9c168fa-20250918033935-gqltg.jpg" alt="MB TDC DHQG" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB TĐC ĐHQG</div>
+            <div class="mb-details">Gần Đại học Quốc Gia<br>150k+ sinh viên<br>Giá: 25-30 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z7023833586787_422ec022c759ae0f14d94ecebd799731-20250918033551-v9kq8.jpg" alt="MB Tan Xa" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB TÂN XÃ</div>
+            <div class="mb-details">Xã Tân Xã, Thạch Thất<br>Ngay đường DH10<br>Giá: 20-25 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z5733538647840_559fdede5c5309e0a3270106cfe1cf36-20240815075058-fiis1.jpg" alt="MB 29 Lo Ha Bang" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB 29 LÔ HẠ BẰNG</div>
+            <div class="mb-details">Khu TĐC Vai Réo<br>Hạ tầng hoàn thiện<br>Giá: 20 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z6984306701892_141ffc2161e9bef136f5196032e60fcc-20250906140106-tx0x7.jpg" alt="MB Khu TDC Vai Reo" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">MB KHU TĐC VAI RÉO</div>
+            <div class="mb-details">Lô từ 60-305m²<br>Sổ đỏ từng lô<br>Giá: 20-25 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+        <div class="mb-card">
+          <img class="mb-card-img" src="../w.ladicdn.com/s700x600/5cdbd6d230dba94fe2f64cd4/z7023833495582_dfb6190185475c884ceaba7d70427a85-20250918033934-9zecx.jpg" alt="TDC Dong Doi" loading="lazy">
+          <div class="mb-card-body">
+            <div class="mb-name">TĐC ĐỒNG DOI</div>
+            <div class="mb-details">Khu đô thị mới<br>Hạ tầng đồng bộ<br>Giá: 15-18 Tr/m²</div>
+            <button class="mb-btn" onclick="openPopup()">Xem Chi Tiết</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TONG QUAN -->
+<section class="section-tq" id="tong-quan">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header" style="margin-bottom:36px">
+      <div class="section-tag" style="background:rgba(245,200,66,0.2);color:var(--gold)">📍 Tổng Quan Hòa Lạc</div>
+      <h2 class="section-title" style="color:var(--white)">Khu Đô Thị Vệ Tinh <span style="color:var(--gold);-webkit-text-fill-color:var(--gold)">Hòa Lạc</span></h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.7)">Điểm đến đầu tư chiến lược phía Tây Hà Nội – nơi hội tụ công nghệ, giáo dục, y tế và đô thị hiện đại</p>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="tq-tabs-wrap">
+      <div class="tq-tab-nav">
+        <button class="tq-tab-btn active" onclick="switchTqTab(this,'tq-overview')">🏙️ Tổng Quan</button>
+        <button class="tq-tab-btn" onclick="switchTqTab(this,'tq-location')">📍 Vị Trí Tiềm Năng</button>
+        <button class="tq-tab-btn" onclick="switchTqTab(this,'tq-infra')">🏗️ Hạ Tầng</button>
+        <button class="tq-tab-btn" onclick="switchTqTab(this,'tq-zones')">🗺️ Các Khu Vực</button>
+        <button class="tq-tab-btn" onclick="switchTqTab(this,'tq-investors')">🏢 Nhà Đầu Tư</button>
+      </div>
+
+      <!-- Tab 1: Overview -->
+      <div class="tq-tab-pane active" id="tq-overview">
+        <div class="tq-intro-grid">
+          <div>
+            <p class="tq-desc">Vệ Tinh Hòa Lạc được đánh giá là một trong những khu đô thị có vị trí đắc địa, thuận tiện nhất. Theo quy hoạch, dự án cách trung tâm Hội nghị Quốc gia <strong style="color:var(--gold)">26 km</strong> về phía Tây đi theo đường đại lộ Thăng Long đến ngã tư Hòa Lạc – Sơn Tây – Xuân Mai – Hòa Bình.</p>
+            <p class="tq-desc">Khu đô thị tiếp giáp với nhiều tuyến đường huyết mạch như <strong style="color:var(--gold)">quốc lộ 21, đại lộ Thăng Long</strong>, tạo điều kiện dễ dàng di chuyển đến các khu trung tâm. Theo quy hoạch, khu CNC Hòa Lạc được chia thành 4 khu chính với đầy đủ tiện ích đẳng cấp.</p>
+            <div class="tq-stats-row">
+              <div class="tq-stat">
+                <span class="tq-stat-num">26km</span>
+                <div class="tq-stat-label">Tới Hội Nghị QG</div>
+              </div>
+              <div class="tq-stat">
+                <span class="tq-stat-num">150k+</span>
+                <div class="tq-stat-label">Sinh viên ĐHQG</div>
+              </div>
+              <div class="tq-stat">
+                <span class="tq-stat-num">30%</span>
+                <div class="tq-stat-label">Tăng trưởng/năm</div>
+              </div>
+              <div class="tq-stat">
+                <span class="tq-stat-num">4 Khu</span>
+                <div class="tq-stat-label">Phân khu chức năng</div>
+              </div>
+            </div>
+          </div>
+          <div class="tq-img-box">
+            <img src="../w.ladicdn.com/s1150x1000/5b5bed5d9256d53eeefccae2/1503991192_thietkevanphongviettelbaclieu3-20201027042943.jpg" alt="Khu Công Nghệ Cao Hòa Lạc" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Location -->
+      <div class="tq-tab-pane" id="tq-location">
+        <p class="tq-desc" style="margin-bottom:24px">Khu đô thị Vệ Tinh Hòa Lạc tiếp giáp với nhiều tuyến đường huyết mạch và các tiện ích đẳng cấp, tạo nên hệ sinh thái đầu tư hoàn chỉnh:</p>
+        <div class="loc-points">
+          <div class="loc-point">
+            <div class="loc-point-icon">🛣️</div>
+            <div>
+              <div class="loc-point-name">Đại lộ Thăng Long</div>
+              <div class="loc-point-desc">Tuyến đường huyết mạch kết nối Hòa Lạc với trung tâm Hà Nội, cách 26km tới Hội nghị Quốc gia</div>
+            </div>
+          </div>
+          <div class="loc-point">
+            <div class="loc-point-icon">🛤️</div>
+            <div>
+              <div class="loc-point-name">Quốc lộ 21</div>
+              <div class="loc-point-desc">Kết nối Hòa Lạc – Sơn Tây – Xuân Mai – Hòa Bình, thuận tiện di chuyển nhiều hướng</div>
+            </div>
+          </div>
+          <div class="loc-point">
+            <div class="loc-point-icon">🏭</div>
+            <div>
+              <div class="loc-point-name">Khu Công Nghệ Cao</div>
+              <div class="loc-point-desc">Hanwha Aerospace (Hàn Quốc), Nidec (Nhật Bản), Viettel, FPT, VinGroup và nhiều tập đoàn lớn</div>
+            </div>
+          </div>
+          <div class="loc-point">
+            <div class="loc-point-icon">🏥</div>
+            <div>
+              <div class="loc-point-name">Khu Y Tế</div>
+              <div class="loc-point-desc">BV Nhi TW, BV Phụ sản TW, Viện Huyết học Truyền máu TW và nhiều cơ sở y tế lớn</div>
+            </div>
+          </div>
+          <div class="loc-point">
+            <div class="loc-point-icon">🎓</div>
+            <div>
+              <div class="loc-point-name">ĐHQG Hà Nội</div>
+              <div class="loc-point-desc">Khu trung tâm, các khoa – trường học, ký túc xá sinh viên, trung tâm TDTT quy mô lớn</div>
+            </div>
+          </div>
+          <div class="loc-point">
+            <div class="loc-point-icon">🏘️</div>
+            <div>
+              <div class="loc-point-name">Khu Nhà Ở</div>
+              <div class="loc-point-desc">Phú Cát City, KĐT Tiến Xuân – Sudico, KĐT sinh thái Thác Bạc – Suối Sao và nhiều dự án khác</div>
+            </div>
+          </div>
+          <div class="loc-point">
+            <div class="loc-point-icon">🏫</div>
+            <div>
+              <div class="loc-point-name">Trường Đại học FPT</div>
+              <div class="loc-point-desc">6 khối KTX (A, B, C, D, E, F), phòng học tiêu chuẩn quốc tế, hệ sinh thái giáo dục đầy đủ</div>
+            </div>
+          </div>
+          <div class="loc-point">
+            <div class="loc-point-icon">🏙️</div>
+            <div>
+              <div class="loc-point-name">Trung tâm Ngã Tư Hòa Lạc</div>
+              <div class="loc-point-desc">Điểm giao thương chiến lược tại ngã tư Hòa Lạc – Sơn Tây – Xuân Mai – Hòa Bình</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Infrastructure -->
+      <div class="tq-tab-pane" id="tq-infra">
+        <div class="infra-content">
+          <div class="infra-img">
+            <img src="../w.ladicdn.com/s950x750/5cdbd6d230dba94fe2f64cd4/z4504086109459_52bac9352598b88dcb76d3eb03f82002-20230710085220-vztkq.jpg" alt="Hạ tầng giao thông Hòa Lạc" loading="lazy">
+          </div>
+          <div>
+            <h3 class="tq-title" style="font-size:22px;margin-bottom:20px">Hạ Tầng <span>Giao Thông</span> Đang Hoàn Thiện</h3>
+            <ul class="infra-list">
+              <li class="infra-item">
+                <div class="infra-item-icon">🚃</div>
+                <div>
+                  <div class="infra-item-title">Đường sắt Văn Cao – Hòa Lạc</div>
+                  <div class="infra-item-desc">Khởi công tuyến metro Văn Cao – Hòa Lạc trong năm 2025, kết nối trực tiếp với nội thành Hà Nội</div>
+                </div>
+              </li>
+              <li class="infra-item">
+                <div class="infra-item-icon">🛣️</div>
+                <div>
+                  <div class="infra-item-title">Đại lộ Thăng Long mở rộng</div>
+                  <div class="infra-item-desc">Tuyến đường huyết mạch 6 làn xe, kết nối trực tiếp Hòa Lạc – Hà Nội trong khoảng 30 phút</div>
+                </div>
+              </li>
+              <li class="infra-item">
+                <div class="infra-item-icon">🔌</div>
+                <div>
+                  <div class="infra-item-title">Hệ thống điện – nước – viễn thông</div>
+                  <div class="infra-item-desc">Hạ tầng kỹ thuật đồng bộ toàn khu, đảm bảo cung cấp đầy đủ cho khu CNC và dân cư</div>
+                </div>
+              </li>
+              <li class="infra-item">
+                <div class="infra-item-icon">🌿</div>
+                <div>
+                  <div class="infra-item-title">Hạ tầng xanh & sinh thái</div>
+                  <div class="infra-item-desc">Hệ thống cây xanh, hồ điều hòa, công viên sinh thái được quy hoạch trong toàn khu đô thị</div>
+                </div>
+              </li>
+              <li class="infra-item">
+                <div class="infra-item-icon">🏗️</div>
+                <div>
+                  <div class="infra-item-title">Nghìn tỷ đầu tư công</div>
+                  <div class="infra-item-desc">Hòa Lạc được quy hoạch lên thành phố, hàng loạt dự án hạ tầng nghìn tỷ dồn dập triển khai</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Zones -->
+      <div class="tq-tab-pane" id="tq-zones">
+        <p class="tq-desc" style="margin-bottom:24px">Theo quy hoạch, khu CNC Hòa Lạc được chia thành <strong style="color:var(--gold)">4 khu chức năng chính</strong>, mỗi khu phục vụ một mục đích chiến lược riêng biệt:</p>
+        <div class="zones-grid">
+          <div class="zone-card">
+            <span class="zone-icon">⚗️</span>
+            <div class="zone-name">Khu Công Nghệ Cao (CNC)</div>
+            <ul class="zone-items">
+              <li>Hanwha Aerospace – Tập đoàn Hàn Quốc</li>
+              <li>Nidec – Tập đoàn công nghệ Nhật Bản</li>
+              <li>Viettel – Tổ hợp sản xuất công nghiệp 9,1ha</li>
+              <li>FPT Software – Trung tâm R&D</li>
+              <li>VinGroup – Nhà máy VinSmart giai đoạn 1</li>
+            </ul>
+          </div>
+          <div class="zone-card">
+            <span class="zone-icon">🏥</span>
+            <div class="zone-name">Khu Y Tế Chất Lượng Cao</div>
+            <ul class="zone-items">
+              <li>Bệnh viện Nhi Trung Ương</li>
+              <li>Bệnh viện Phụ sản Trung Ương</li>
+              <li>Viện Huyết học Truyền máu TW</li>
+              <li>Các cơ sở y tế chuyên sâu khác</li>
+            </ul>
+          </div>
+          <div class="zone-card">
+            <span class="zone-icon">🎓</span>
+            <div class="zone-name">Khu Đại Học Quốc Gia</div>
+            <ul class="zone-items">
+              <li>Khu trung tâm hành chính ĐHQG</li>
+              <li>Các khoa và trường thành viên</li>
+              <li>Khu ký túc xá sinh viên 150k+</li>
+              <li>Khu trung tâm TDTT</li>
+              <li>ĐH FPT, TH School Hòa Lạc</li>
+            </ul>
+          </div>
+          <div class="zone-card">
+            <span class="zone-icon">🏘️</span>
+            <div class="zone-name">Khu Đô Thị & Nhà Ở</div>
+            <ul class="zone-items">
+              <li>KĐT Phú Cát City</li>
+              <li>KĐT Tiến Xuân – Sudico</li>
+              <li>KĐT sinh thái Thác Bạc – Suối Sao</li>
+              <li>TDC Vai Rẽo, TDC Bình Yên...</li>
+              <li>Trung tâm thương mại, dịch vụ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 5: Investors -->
+      <div class="tq-tab-pane" id="tq-investors">
+        <p class="tq-desc" style="margin-bottom:24px">Những tập đoàn hàng đầu Việt Nam và quốc tế đã và đang đầu tư mạnh mẽ tại Khu Công Nghệ Cao Hòa Lạc:</p>
+        <div class="investor-grid">
+          <div class="investor-card">
+            <div class="investor-logo">📡</div>
+            <div class="investor-name">VIETTEL HÒA LẠC</div>
+            <p class="investor-desc">Viettel khởi công xây dựng <strong style="color:var(--gold)">Tổ hợp sản xuất công nghiệp công nghệ cao</strong> diện tích 9,1 ha – trở thành trung tâm thử nghiệm, sản xuất thiết bị công nghệ cao. Tiếp đó xây dựng <strong style="color:var(--gold)">Trung tâm R&D Viettel 13,2 ha</strong> – vườn ươm cho các dự án trọng điểm: thiết bị quốc phòng, viễn thông, hạ tầng 5G, IoT.</p>
+          </div>
+          <div class="investor-card">
+            <div class="investor-logo">📱</div>
+            <div class="investor-name">VINSMART – VINGROUP</div>
+            <p class="investor-desc">Công ty VinSmart (thuộc Tập đoàn Vingroup) khánh thành <strong style="color:var(--gold)">giai đoạn 1 Tổ hợp Nhà máy sản xuất thiết bị điện tử</strong> tại Khu CNC Hòa Lạc năm 2019. Hệ sinh thái sản phẩm rộng lớn: điện thoại thông minh, thiết bị điện tử thông minh – khẳng định vị thế công nghệ Việt.</p>
+          </div>
+          <div class="investor-card">
+            <div class="investor-logo">🎓</div>
+            <div class="investor-name">ĐẠI HỌC FPT</div>
+            <p class="investor-desc">Đại học FPT tại Hòa Lạc sở hữu <strong style="color:var(--gold)">6 khối KTX (DOM A, B, C, D, E, F)</strong> dành cho hàng nghìn sinh viên và cán bộ. Phòng ở được thiết kế đạt tiêu chuẩn hiện đại, phục vụ nhu cầu sinh sống, học tập và làm việc trong một môi trường giáo dục tiên tiến.</p>
+          </div>
+          <div class="investor-card">
+            <div class="investor-logo">🏫</div>
+            <div class="investor-name">TH SCHOOL HÒA LẠC</div>
+            <p class="investor-desc">Trường TH School thành lập cơ sở 2 tại <strong style="color:var(--gold)">Khu dịch vụ tổng hợp 1, Khu CNC Hòa Lạc</strong>. Hệ thống giáo dục gồm THCS và THPT TH School Hòa Lạc – quy mô lớn, trang thiết bị hiện đại, các phòng học đạt tiêu chuẩn quốc tế.</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end tq-tabs-wrap -->
+  </div>
+</section>
+
+<!-- LOI ICH -->
+<section class="section-loiich" id="loi-ich">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">✅ Lợi Ích</div>
+      <h2 class="section-title">Lợi Ích Đầu Tư <span>Tại Hòa Lạc</span></h2>
+      <p class="section-desc">4 lý do khiến Hòa Lạc trở thành điểm đầu tư hàng đầu khu vực phía Tây Hà Nội</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🗺️</div>
+        <div class="benefit-content">
+          <div class="benefit-title">1. Vị Trí Chiến Lược</div>
+          <div class="benefit-desc">Nằm gần các tuyến đường chính như quốc lộ 21, đại lộ Thăng Long. Cách trung tâm Hà Nội chỉ 30 phút. Kết nối với các khu công nghiệp, trung tâm y tế, giáo dục lớn.</div>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💰</div>
+        <div class="benefit-content">
+          <div class="benefit-title">2. Giá Bán Hợp Lý</div>
+          <div class="benefit-desc">Chỉ từ 1 tỷ đồng, diện tích 60m² - 3000m². Tăng trưởng bền vững lên đến 30%/năm. Mức giá phù hợp với mọi nhà đầu tư, từ cá nhân đến tổ chức.</div>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🏗️</div>
+        <div class="benefit-content">
+          <div class="benefit-title">3. Hạ Tầng Hoàn Thiện</div>
+          <div class="benefit-desc">Hệ thống cơ sở hạ tầng với 4 phân khu chuyển biệt: KCN CNC Hòa Lạc, Khu Đại học Quốc gia, KDT sinh thái và khu hỗ hợp y tế - thương mại dịch vụ.</div>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📜</div>
+        <div class="benefit-content">
+          <div class="benefit-title">4. Pháp Lý Rõ Ràng</div>
+          <div class="benefit-desc">Minh bạch, rõ ràng. Sổ đỏ từng lô. Sở hữu lâu dài. Không tranh chấp. Đất ở hợp pháp, đủ điều kiện xây dựng ngay khi nhận sổ.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VI TRI -->
+<section class="section-vitri" id="vi-tri">
+  <div class="container">
+    <div class="vitri-inner">
+      <div class="vitri-img">
+        <img src="../w.ladicdn.com/s950x750/5cdbd6d230dba94fe2f64cd4/z4504086109459_52bac9352598b88dcb76d3eb03f82002-20230710085220-vztkq.jpg" alt="Vị trí Hòa Lạc" loading="lazy">
+      </div>
+      <div class="vitri-text">
+        <div class="section-tag">📍 Vị Trí Tiềm Năng</div>
+        <h2 class="section-title" style="text-align:left">Vị Trí <span>Đắc Địa</span></h2>
+        <p style="color:var(--text-gray);line-height:1.8;margin-bottom:20px">Vị trí Tiểu Hòa Lạc được đánh giá là một trong những khu đô thị vệ tinh có vị trí tốt nhất. Tọa độ thuận lợi: Theo quy hoạch, dự án là khu trung tâm tích hợp Quốc Gia 20 km về phía Tây Hà Nội.</p>
+        <div class="vitri-logo-row">
+          <div class="vitri-item">
+            <div style="font-size:28px">🎓</div>
+            <div class="vitri-item-label">ĐHQG Hà Nội</div>
+          </div>
+          <div class="vitri-item">
+            <div style="font-size:28px">🏭</div>
+            <div class="vitri-item-label">KCN CNC</div>
+          </div>
+          <div class="vitri-item">
+            <div style="font-size:28px">🏥</div>
+            <div class="vitri-item-label">Bệnh viện</div>
+          </div>
+          <div class="vitri-item">
+            <div style="font-size:28px">🛣️</div>
+            <div class="vitri-item-label">Đại lộ Thăng Long</div>
+          </div>
+          <div class="vitri-item">
+            <div style="font-size:28px">🏫</div>
+            <div class="vitri-item-label">FPT School</div>
+          </div>
+          <div class="vitri-item">
+            <div style="font-size:28px">🏢</div>
+            <div class="vitri-item-label">Trung tâm HCC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHUONG AN -->
+<section class="section-phuongan">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag" style="background:rgba(245,200,66,0.15);color:var(--gold)">📋 Phương Án</div>
+      <h2 class="section-title" style="color:var(--white)">Chọn <span style="color:var(--gold);-webkit-text-fill-color:var(--gold)">Phương Án</span> Phù Hợp</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.7)">Hai phương án đầu tư linh hoạt phù hợp mọi nhu cầu và ngân sách</p>
+    </div>
+    <div class="pa-grid">
+      <div class="pa-card">
+        <span class="pa-icon">📊</span>
+        <div class="pa-name">Phương Án 1 – Đầu Tư Trực Tiếp</div>
+        <p class="pa-desc">Mua đất trực tiếp và giữ trong thời gian 1-3 năm. Với tốc độ phát triển hạ tầng mạnh mẽ, giá đất dự kiến tăng 25-30%/năm. Lãi suất vượt trội so với gửi ngân hàng.</p>
+        <button class="pa-btn" onclick="openPopup()">Nhận Tư Vấn Ngay</button>
+      </div>
+      <div class="pa-card">
+        <span class="pa-icon">🏠</span>
+        <div class="pa-name">Phương Án 2 – Mua Để Ở & Đầu Tư</div>
+        <p class="pa-desc">Xây nhà để ở hoặc cho thuê, kết hợp hưởng lợi từ tăng giá đất. Khu vực có nhu cầu nhà ở cao từ sinh viên, kỹ sư làm việc tại các KCN lân cận.</p>
+        <button class="pa-btn" onclick="openPopup()">Nhận Tư Vấn Ngay</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIN TUC -->
+<section class="section-tintuc" id="tin-tuc">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">📰 Tin Tức</div>
+      <h2 class="section-title">Thông Tin <span>Hòa Lạc</span></h2>
+      <p class="section-desc">Cập nhật những tin tức, sự kiện mới nhất về thị trường đất nền tại Hòa Lạc</p>
+    </div>
+    <div class="news-layout">
+      <div class="news-main">
+        <div class="news-main-card">
+          <img class="news-main-img" src="../w.ladicdn.com/s1150x1000/5b5bed5d9256d53eeefccae2/1503991192_thietkevanphongviettelbaclieu3-20201027042943.jpg" alt="Khu công nghệ cao Hòa Lạc" loading="lazy">
+          <div class="news-main-body">
+            <span class="news-tag">🏗️ Hạ Tầng</span>
+            <div class="news-main-title">Khu công nghệ cao Hòa Lạc: Điểm đến của các dự án đầu tư chất lượng cao</div>
+            <p class="news-main-desc">Khu công nghệ cao Hoà Lạc đang đón nhận những tín hiệu tốt về công tác thu hút đầu tư. Đặc biệt là sự xuất hiện của nhiều dự án có vốn đầu tư lớn của nước ngoài với hàm lượng công nghệ cao, sử dụng đất tiết kiệm và có thời gian giải ngân vốn đầu tư nhanh...</p>
+            <a href="http://kinhtevn.com.vn/khu-cong-nghe-cao-hoa-lac-diem-den-cua-cac-du-an-dau-tu-chat-luong-cao-34769.html" target="_blank" rel="noopener" class="news-read-more">Đọc tiếp →</a>
+          </div>
+        </div>
+      </div>
+      <div class="news-sidebar">
+        <div class="news-sidebar-title">📌 Tin Tức Khác</div>
+        <a href="https://vnexpress.net/khoi-cong-tuyen-duong-sat-van-cao-hoa-lac-trong-nam-2025-4852698.html" target="_blank" rel="noopener" class="news-item">
+          <div class="news-item-icon">🚃</div>
+          <div>
+            <div class="news-item-title">Khởi công tuyến đường sắt Văn Cao - Hòa Lạc trong năm 2025</div>
+            <div class="news-item-src">VnExpress</div>
+          </div>
+        </a>
+        <a href="https://cafef.vn/khau-vi-moi-cua-gioi-dau-tu-bat-dong-san-20201021213448662.chn" target="_blank" rel="noopener" class="news-item">
+          <div class="news-item-icon">🏠</div>
+          <div>
+            <div class="news-item-title">&ldquo;Khẩu vị&rdquo; mới của giới đầu tư bất động sản</div>
+            <div class="news-item-src">CafeF</div>
+          </div>
+        </a>
+        <a href="https://vnexpress.net/dh-quoc-gia-ha-noi-dua-20-000-sinh-vien-len-hoa-lac-nam-2025-4831370.html" target="_blank" rel="noopener" class="news-item">
+          <div class="news-item-icon">🎓</div>
+          <div>
+            <div class="news-item-title">ĐH Quốc gia Hà Nội đưa 20.000 sinh viên lên Hòa Lạc năm 2025</div>
+            <div class="news-item-src">VnExpress</div>
+          </div>
+        </a>
+        <a href="https://nhandan.vn/khoi-cong-xay-dung-cong-trinh-truong-dai-hoc-cong-nghe-tai-hoa-lac-post852311.html" target="_blank" rel="noopener" class="news-item">
+          <div class="news-item-icon">🏗️</div>
+          <div>
+            <div class="news-item-title">Khởi công xây dựng công trình Trường đại học Công nghệ tại Hòa Lạc</div>
+            <div class="news-item-src">Nhân Dân</div>
+          </div>
+        </a>
+        <a href="https://cafef.vn/hoa-lac-duoc-quy-hoach-len-thanh-pho-loat-du-an-ha-tang-nghin-ty-don-dap-trien-khai-hut-nha-dau-tu-bat-dong-san-188241119090449538.chn" target="_blank" rel="noopener" class="news-item">
+          <div class="news-item-icon">🏙️</div>
+          <div>
+            <div class="news-item-title">Hòa Lạc được quy hoạch lên thành phố, loạt dự án hạ tầng nghìn tỷ dồn dập triển khai</div>
+            <div class="news-item-src">CafeF</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <h2>Cơ Hội Có Hạn – Hành Động Ngay!</h2>
+  <p>Liên hệ ngay để nhận bảng giá chi tiết và tư vấn miễn phí từ chuyên gia</p>
+  <a href="tel:0915284679" class="btn-primary">📞 Gọi Ngay: 0915.284.679</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p style="color:var(--gold);font-weight:700;font-size:16px;margin-bottom:12px">🏡 Đất Nền Hòa Lạc</p>
+  <p style="margin-bottom:8px">📞 Hotline: <a href="tel:0915284679">0915.284.679</a> | 📍 Hòa Lạc, Thạch Thất, Hà Nội</p>
+  <p style="margin-top:16px;opacity:0.5">© 2025 dautu-hoalac.com – Tư vấn đầu tư bất động sản Hòa Lạc</p>
+</footer>
+
+<!-- FLOAT CALL -->
+<a href="tel:0915284679" class="float-call">📞</a>
+<a href="https://zalo.me/0915284679" target="_blank" rel="noopener" class="float-zalo">Zalo</a>
+
+<!-- POPUP -->
+<div class="popup-overlay" id="popupOverlay" onclick="closePopupOutside(event)">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup()">✕</button>
+    <div class="popup-title">🎯 Đăng Ký Nhận Bảng Giá</div>
+    <p class="popup-sub">Điền thông tin để nhận ngay bảng giá và được tư vấn miễn phí</p>
+    <form onsubmit="handleSubmit(event)">
+      <div class="form-group"><input type="text" name="name" placeholder="Họ và tên *" required></div>
+      <div class="form-group"><input type="tel" name="phone" placeholder="Số điện thoại *" required pattern="[0-9]{9,11}" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'')"></div>
+      <div class="form-group"><input type="email" name="email" placeholder="Email (không bắt buộc)"></div>
+      <button type="submit" class="form-submit">🚀 TẢI NGAY BẢNG GIÁ</button>
+    </form>
+    <p class="form-note">🔒 Thông tin được bảo mật tuyệt đối</p>
+  </div>
+</div>
+
+<script>
+function switchTqTab(btn, paneId){
+  document.querySelectorAll('.tq-tab-btn').forEach(function(b){b.classList.remove('active')});
+  document.querySelectorAll('.tq-tab-pane').forEach(function(p){p.classList.remove('active')});
+  btn.classList.add('active');
+  document.getElementById(paneId).classList.add('active');
+}
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMenu(){
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+function openPopup(){
+  document.getElementById('popupOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePopup(){
+  document.getElementById('popupOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+function closePopupOutside(e){
+  if(e.target===document.getElementById('popupOverlay'))closePopup();
+}
+var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyHrLT8xSWaHcQfOfAuY_FjkMLhAV4q59xaKawBOZS0WNThDH6WZocJ4yRsADawucYY/exec';
+function handleSubmit(e){
+  e.preventDefault();
+  var form = e.target;
+  var btn = form.querySelector('button[type=submit]');
+  var name  = (form.querySelector('[name=name]')  || {}).value || '';
+  var phone = (form.querySelector('[name=phone]') || {}).value || '';
+  var email = (form.querySelector('[name=email]') || {}).value || '';
+  // Validate phone: không trống và chỉ chứa số
+  if(!phone || !/^[0-9]{9,11}$/.test(phone)){
+    var phoneInput = form.querySelector('[name=phone]');
+    phoneInput.focus();
+    phoneInput.style.borderColor='#e74c3c';
+    setTimeout(function(){phoneInput.style.borderColor='';},2000);
+    return;
+  }
+  // Disable button while sending
+  btn.disabled = true;
+  btn.textContent = '⏳ Đang gửi...';
+  // Build URL params
+  var params = new URLSearchParams();
+  params.append('name',  name);
+  params.append('phone', phone);
+  params.append('email', email);
+  params.append('time',  new Date().toLocaleString('vi-VN',{timeZone:'Asia/Ho_Chi_Minh'}));
+  fetch(SCRIPT_URL + '?' + params.toString(), {method:'GET', mode:'no-cors'})
+    .catch(function(){}) // no-cors – ignore response
+    .finally(function(){
+      btn.textContent = '✅ Đã Gửi! Chúng Tôi Sẽ Liên Hệ Ngay';
+      btn.style.background = '#27ae60';
+      btn.disabled = false;
+      setTimeout(function(){
+        closePopup();
+        btn.textContent = btn.getAttribute('data-original') || '🚀 TẢI NGAY BẢNG GIÁ';
+        btn.style.background = '';
+        form.reset();
+      }, 2500);
+    });
+}
+// Show popup after 3s
+setTimeout(function(){
+  if(!sessionStorage.getItem('popupShown')){
+    openPopup();
+    sessionStorage.setItem('popupShown','1');
+  }
+},3000);
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=this.getAttribute('href');
+    if(id==='#')return;
+    var el=document.querySelector(id);
+    if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
